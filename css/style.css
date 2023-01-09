@@ -197,6 +197,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  top: 0px;
+  left: 0px;
 }
 .title {
   font-size: 35px;
@@ -916,7 +918,7 @@ button[disabled="disabled"]:hover {
     align-items: flex-start;
   }
   h1 {
-    font-size: 72px;
+    font-size: 65px;
   }
 
   .advert {
@@ -1021,6 +1023,7 @@ button[disabled="disabled"]:hover {
   }
   .products-title {
     text-align: center;
+    padding-left: 0px;
   }
 }
 @media (max-width: 460px) {
@@ -1028,7 +1031,7 @@ button[disabled="disabled"]:hover {
     font-size: 32px;
   }
   h1 {
-    font-size: 56px;
+    font-size: 46px;
   }
 
   .products-title {
