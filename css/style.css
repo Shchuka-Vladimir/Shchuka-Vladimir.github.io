@@ -868,7 +868,7 @@ button[disabled="disabled"]:hover {
     font-size: 32px;
   }
   .parallax {
-    height: calc(100vh - 60px);
+    background-attachment: scroll;
   }
 }
 @media (max-width: 820px) {
@@ -1033,7 +1033,7 @@ button[disabled="disabled"]:hover {
   .products-title {
     text-align: center;
     padding-left: 0px;
-    font-size: 24px;
+    font-size: 26px;
   }
 }
 @media (max-width: 460px) {
@@ -1044,7 +1044,7 @@ button[disabled="disabled"]:hover {
     font-size: 44px;
   }
   .products-title {
-    font-size: 22px;
+    font-size: 24px;
   }
   .advert {
     font-size: 25px;
@@ -1055,10 +1055,10 @@ button[disabled="disabled"]:hover {
 }
 @media (max-width: 375px) {
   .products-title {
-    font-size: 20px;
+    font-size: 24px;
   }
   .instagram-card-title {
-    font-size: 24px;
+    font-size: 22px;
   }
   h1 {
     font-size: 36px;
