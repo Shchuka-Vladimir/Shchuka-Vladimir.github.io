@@ -743,6 +743,7 @@ button[disabled="disabled"]:hover {
   align-items: center;
   padding: 40px 6vw 0px;
   gap: 40px;
+  overflow-y: auto;
 }
 .ul-nav {
   height: 100%;
@@ -881,8 +882,8 @@ button[disabled="disabled"]:hover {
     );
     --width-img--instagram: calc(
       (
-          100vw - 2 * var(--padding-page) - 3 *
-            var(--gap-instagram-cards-container) - var(--padding-card)
+          100vw - 2 * var(--padding-page) - var(--gap-instagram-cards-container) -
+            3 * var(--padding-card)
         ) / 2
     );
   }
