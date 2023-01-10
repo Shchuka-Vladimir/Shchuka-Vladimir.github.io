@@ -185,7 +185,6 @@ const ru = {
   title: "Магазин праздничных принадлежностей",
 };
 const elementPlaceholder = document.querySelector("[placeholder]");
-
 changeLanguage(en);
 function changeLanguage(language) {
   const elementTranslate = document.querySelectorAll("[lang-key]");
@@ -198,7 +197,6 @@ function changeLanguage(language) {
   changePlaceholder(language);
   changeButtonLanguage(language);
 }
-
 function changePlaceholder(language) {
   if (language === ru) {
     elementPlaceholder.setAttribute("placeholder", "Введите ваш email здесь*");
@@ -206,7 +204,6 @@ function changePlaceholder(language) {
     elementPlaceholder.setAttribute("placeholder", "Enter your email here*");
   }
 }
-
 function changeButtonLanguage(language) {
   const elementButtonLanguage = document.querySelectorAll(".language");
   if (language === ru) {
@@ -220,10 +217,10 @@ function changeButtonLanguage(language) {
 function changeFont(language) {
   const elementFooterWrapper = document.querySelector(".footer-wrapper");
   if (language === ru) {
-    elementFooterWrapper.style.fontFamily = '"Jost", Arial, sans-serif';
-    elementPlaceholder.style.fontFamily = '"Jost", Arial, sans-serif';
+    elementFooterWrapper.style.fontFamily = '"Jost"';
+    elementPlaceholder.style.fontFamily = '"Jost"';
   } else if (language === en) {
-    elementFooterWrapper.style.fontFamily = '"Hind", Arial, sans-serif';
-    elementPlaceholder.style.fontFamily = '"Hind", Arial, sans-serif';
+    elementFooterWrapper.style.fontFamily = '"Hind"';
+    elementPlaceholder.style.fontFamily = '"Hind"';
   }
 }

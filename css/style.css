@@ -482,6 +482,7 @@ button[disabled="disabled"]:hover {
   background-color: var(--background-color--button);
   color: white;
   height: 40px;
+  transition: background-color 0.4s ease-in;
 }
 .button-add:hover {
   opacity: 0.7;
@@ -505,6 +506,9 @@ button[disabled="disabled"]:hover {
 }
 .input-number::-webkit-inner-spin-button {
   appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .footer-wrapper {
@@ -598,6 +602,7 @@ button[disabled="disabled"]:hover {
   display: flex;
   flex-direction: column;
   gap: 56px;
+align-items: center;
 }
 .instagram-card-title {
   letter-spacing: 0.03em;
@@ -1056,10 +1061,11 @@ button[disabled="disabled"]:hover {
 }
 @media (max-width: 375px) {
   .products-title {
-    font-size: 24px;
+    font-size: 20px;
   }
   .instagram-card-title {
-    font-size: 22px;
+    font-size: 20px;
+ max-width: 280px;
   }
   h1 {
     font-size: 36px;
@@ -1076,10 +1082,11 @@ button[disabled="disabled"]:hover {
     font-size: 16px;
   }
   .instagram-card-title {
-    font-size: 16px;
-  }
+    font-size: 18px;
+   }
   h1 {
     font-size: 24px;
+  max-width: 270px;
   }
   .advert {
     font-size: 16px;
@@ -1109,18 +1116,4 @@ button[disabled="disabled"]:hover {
     height: 30px;
   }
 }
-@media (device-width: 1180px) or (device-width: 1368px) {
-  .quantity-wrapper {
-    opacity: 1;
-  }
-  .sun:hover ~ .tooltip,
-  .moon:hover ~ .tooltip {
-    transform: scale(0);
-  }
-  .img-wrapper-instagram:hover .instagram-card-box {
-    opacity: 0;
-  }
-  .product-container:hover .quick--view {
-    transform: translateY(100%);
-  }
-}
+
