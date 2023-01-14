@@ -407,7 +407,6 @@ h1 {
   justify-content: flex-start;
 }
 .arrow-card {
-  height: var(--height-svg-arrow--product);
   position: absolute;
   top: calc(
     (var(--width-img--product) / 2) - var(--height-svg-arrow--product) / 2
@@ -602,7 +601,7 @@ input[type="number"] {
   display: flex;
   flex-direction: column;
   gap: 56px;
-align-items: center;
+  align-items: center;
 }
 .instagram-card-title {
   letter-spacing: 0.03em;
@@ -639,7 +638,6 @@ align-items: center;
   padding-bottom: 10px;
 }
 .arrow-card--instagram {
-  height: var(--height-svg-arrow--instagram);
   position: absolute;
   top: calc(
     (var(--width-img--instagram) / 2) - var(--height-svg-arrow--instagram) / 2
@@ -1065,7 +1063,7 @@ align-items: center;
   }
   .instagram-card-title {
     font-size: 20px;
- max-width: 280px;
+    max-width: 280px;
   }
   h1 {
     font-size: 36px;
@@ -1083,10 +1081,10 @@ align-items: center;
   }
   .instagram-card-title {
     font-size: 18px;
-   }
+  }
   h1 {
     font-size: 24px;
-  max-width: 270px;
+    max-width: 270px;
   }
   .advert {
     font-size: 16px;
@@ -1116,4 +1114,3 @@ align-items: center;
     height: 30px;
   }
 }
-
