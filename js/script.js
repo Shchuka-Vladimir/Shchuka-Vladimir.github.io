@@ -1,20 +1,20 @@
 ﻿const buttonMinus = document.querySelectorAll(".button-minus");
-const inputNumder = document.querySelectorAll(".input-number");
+const inputNumber = document.querySelectorAll(".input-number");
 function plusNumber(j) {
-  inputNumder[j].value = Number(inputNumder[j].value) + 1;
+  inputNumber[j].value = Number(inputNumber[j].value) + 1;
   buttonMinus[j].removeAttribute("disabled");
 }
 function minusNumber(j) {
-  inputNumder[j].value = Number(inputNumder[j].value) - 1;
-  if (inputNumder[j].value <= 1) {
+  inputNumber[j].value = Number(inputNumber[j].value) - 1;
+  if (inputNumber[j].value <= 1) {
     buttonMinus[j].setAttribute("disabled", "disabled");
   }
 }
 function changeDisabled(j) {
-  if (inputNumder[j].value > 1) {
+  if (inputNumber[j].value > 1) {
     buttonMinus[j].removeAttribute("disabled");
-  } else if (inputNumder[j].value < 1) {
-    inputNumder[j].value = "";
+  } else if (inputNumber[j].value < 1) {
+    inputNumber[j].value = "";
     buttonMinus[j].setAttribute("disabled", "disabled");
   } else {
     buttonMinus[j].setAttribute("disabled", "disabled");
@@ -23,16 +23,14 @@ function changeDisabled(j) {
 
 const productsContainer = document.querySelectorAll(".products-container");
 let counter = [0, 0, 0, 0];
-const quantityCards = inputNumder.length / 3 / 2;
+const quantityCards = inputNumber.length / 3 / 2;
 const arrowCardRight = document.querySelectorAll(".arrow-card-right");
 const arrowCardLeft = document.querySelectorAll(".arrow-card-left");
-const instagramsContainer = document.querySelector(
-  ".instagram-cards-container"
-);
+const instagramContainer = document.querySelector(".instagram-cards-container");
 function moveCardNext(j) {
   hideArrowRight(j);
   if (j === 3) {
-    instagramsContainer.style.transform +=
+    instagramContainer.style.transform +=
       "translateX(calc(0vw - var(--gap-instagram-cards-container) - var(--width-img--instagram)))";
   } else {
     productsContainer[j].style.transform +=
@@ -42,7 +40,7 @@ function moveCardNext(j) {
 function moveCardReverse(j) {
   hideArrowLeft(j);
   if (j === 3) {
-    instagramsContainer.style.transform +=
+    instagramContainer.style.transform +=
       "translateX(calc(var(--gap-instagram-cards-container) + var(--width-img--instagram)))";
   } else {
     productsContainer[j].style.transform +=
@@ -134,7 +132,6 @@ const en = {
   startParty: "Get the party started",
   newsletter: "Join our newsletter",
   subscribeNow: "Subscribe Now",
-  createdWith: "Created with",
   home: "Home",
   shopAll: "Shop All",
   blog: "Blog",
@@ -174,7 +171,6 @@ const ru = {
   startParty: "Начнем вечеринку",
   newsletter: "Присоединяйтесь к нашей рассылке",
   subscribeNow: "Подписаться сейчас",
-  createdWith: "Создано с помощью",
   home: "Главная",
   shopAll: "За покупками",
   blog: "Блог",

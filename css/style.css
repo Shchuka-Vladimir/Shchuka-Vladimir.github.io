@@ -342,19 +342,19 @@ h1 {
   width: 100%;
   position: absolute;
 }
-.translateY--20-scale--07 {
+.translate--20-scale--07 {
   transform: scale(0.7) translateY(-20%);
 }
 .transform-scale--08 {
   transform: scale(0.8);
 }
-.translateY--25 {
+.translate--25 {
   transform: translateY(25%);
 }
-.translateY--15-scale--07 {
+.translate--15-scale--07 {
   transform: scale(0.7) translateY(-15%);
 }
-.translateY--25-scale--06 {
+.translate--25-scale--06 {
   transform: scale(0.6) translateY(-25%);
 }
 .transform-scale--09 {
@@ -592,9 +592,6 @@ input[type="number"] {
   stroke: black;
   fill: none;
   stroke-width: 3;
-}
-.link-wix {
-  color: black;
 }
 .instagram-card-wrapper {
   margin-top: 65px;
